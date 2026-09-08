@@ -1,14 +1,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#07080b;color:#f5f5f5;line-height:1.6;cursor:none}
+body{font-family:Arial,Helvetica,sans-serif;background:#07080b;color:#f5f5f5;line-height:1.6;cursor:auto}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:40px 40px}
-a,button{cursor:none}
+a,button{cursor:pointer}
 .custom-cursor,.cursor-dot{position:fixed;left:0;top:0;pointer-events:none;z-index:2147483647;transform:translate(-50%,-50%);display:block}
 .custom-cursor{width:34px;height:34px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 12px rgba(255,255,255,.65),inset 0 0 8px rgba(255,255,255,.12);transition:width .18s ease,height .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease}
 .cursor-dot{width:6px;height:6px;background:#fff;border-radius:50%;box-shadow:0 0 10px rgba(255,255,255,.9)}
 body.cursor-hover .custom-cursor{width:52px;height:52px;border-color:#fff;background:rgba(255,255,255,.07);box-shadow:0 0 20px rgba(255,255,255,.8)}
 body.cursor-click .custom-cursor{width:24px;height:24px;background:rgba(255,255,255,.2)}
-@media(max-width:750px){body{cursor:auto}a,button{cursor:pointer}.custom-cursor,.cursor-dot{display:none}}
+@media(max-width:750px){a,button{cursor:pointer}.custom-cursor,.cursor-dot{display:none}}
 .nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(7,8,11,.9);backdrop-filter:blur(12px);border-bottom:1px solid #1b1d24}
 .logo{font-size:25px;font-weight:900;letter-spacing:2px}.logo span{font-weight:400}
 nav{display:flex;gap:24px}nav a{color:#aaa;text-decoration:none;font-size:13px;font-weight:bold}nav a:hover{color:#fff}
